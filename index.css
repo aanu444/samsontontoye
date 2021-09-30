@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+section,
+nav,
+footer,
+div {
+  border: 0px solid #000;
+}
+
+header,
+section,
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#navbar-sm {
+  display: none;
+}
+
+.circle {
+  height: 120px;
+  border-radius: 100%;
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  margin-left: 570px;
+  margin-top: 120px;
+  background-color: #000613;
+}
+
+.circle a {
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #b8ddff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.circle a:hover {
+  color: #b8ddff;
+}
+
+.about {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  color: #000613;
+}
+
+.about h1 {
+  margin-top: 100px;
+  margin-left: 50px;
+  font-size: 3.5rem;
+}
+
+.about h2 {
+  font-weight: regular;
+  margin-left: 50px;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.about #btn-xl {
+  display: none;
+}
+
+.image {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: #b8ddff;
+}
+
+.image ul li a {
+  color: #000613;
+  font-size: 1rem;
+}
+
+.image ul li a:hover {
+  color: #000613;
+  font-weight: bold;
+}
+
+.image img {
+  display: block;
+  width: 70%;
+  margin-left: 100px;
+}
+
+.skills {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #000613;
+  height: 120px;
+}
+
+.skills ul {
+  color: #b8ddff;
+}
+
+.skills ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 90px;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.recentprojects {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.recentprojects h2 {
+  color: #000613;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.projectfiles {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.projectfiles .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  height: 300px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.projectfiles .projects .dark {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: rgba(0, 6, 19, 0.6);
+  height: 100%;
+}
+
+.projectfiles .projects .dark h4 {
+  color: #b8ddff;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.projectfiles .projects .dark button {
+  display: block;
+  background-color: #000613;
+  border: 1px solid #000613;
+  padding: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectfiles .projects .dark button a {
+  text-decoration: none;
+  color: #b8ddff;
+  font-weight: regular;
+  display: block;
+  text-align: center;
+}
+
+.projectfiles .projects .light {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: rgba(174, 172, 249, 0.6);
+  height: 100%;
+}
+
+.projectfiles .projects .light h4 {
+  color: #000613;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.projectfiles .projects .light button {
+  display: block;
+  background-color: #b8ddff;
+  border: 1px solid #b8ddff;
+  padding: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectfiles .projects .light button a {
+  text-decoration: none;
+  color: #000613;
+  font-weight: regular;
+  display: block;
+  text-align: center;
+}
+
+.projectfiles .img-01 {
+  background-image: url("images/dataanalysis.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectfiles .img-02 {
+  background-image: url("images/heartdisease.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectfiles .img-03 {
+  background-image: url("images/insurance.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectfiles .img-04 {
+  background-image: url("images/stroke.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectfiles .img-05 {
+  background-image: url("images/bulldozer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.space {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 50px;
+}
+
+footer .contact,
+footer .developer-notice {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: #000613;
+  min-height: 100px;
+}
+
+footer .contact p {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+footer .contact p a {
+  text-decoration: none;
+}
+
+footer .contact p svg {
+  color: #b8ddff;
+}
+
+footer .contact p {
+  color: #b8ddff;
+}
+
+footer .developer-notice p {
+  font-size: 1.1rem;
+  color: #b8ddff;
+  text-align: right;
+  margin-top: 20px;
+}
+
+footer .developer-notice p a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+  #navbar-sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #navbar-sm .fixed-top .collapse .darken a {
+    display: block;
+    text-decoration: none;
+    color: #b8ddff;
+    font-size: 1.2em;
+  }
+  #navbar-sm .darken {
+    background-color: #000613;
+  }
+  .circle {
+    display: none;
+  }
+  .about,
+  .image {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .about h1,
+  .about h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .about h1 {
+    font-size: 2.5em;
+  }
+  .about h2 {
+    font-size: 1em;
+    padding: 10px;
+  }
+  .about #btn-xl {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #000613;
+    padding: 5px;
+    border: 1px solid #000613;
+  }
+  .about #btn-xl a {
+    text-decoration: none;
+    color: #b8ddff;
+    font-size: 1rem;
+  }
+  .image #navbar-xl {
+    display: none;
+  }
+  .image img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills {
+    min-height: 280px;
+  }
+  .skills ul li {
+    margin-left: 25%;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectfiles .projects {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 500px;
+  }
+  .projectfiles .projects .dark h4 {
+    margin-top: 120px;
+    font-size: 2em;
+  }
+  .projectfiles .projects .dark button a {
+    font-size: 1.2em;
+  }
+  .projectfiles .projects .light h4 {
+    margin-top: 120px;
+    font-size: 2em;
+  }
+  .projectfiles .projects .light button a {
+    font-size: 1.2em;
+  }
+  footer .contact,
+  footer .developer-notice {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  footer .contact p {
+    margin-left: 0;
+    text-align: center;
+  }
+  footer .developer-notice p {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+  .circle {
+    width: 15%;
+    margin-left: 240px;
+    margin-top: 30px;
+  }
+  .about h1 {
+    font-size: 3em;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .about h2 {
+    font-size: 1em;
+    font-weight: regular;
+    margin-left: 10px;
+  }
+  .image img {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .skills {
+    height: 320px;
+  }
+  .skills ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 40%;
+    font-size: 1.2em;
+  }
+  .projectfiles .projects {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin-left: 50px;
+  }
+  footer .contact,
+  footer .developer-notice {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  footer .contact p {
+    text-align: center;
+    margin-left: 0;
+  }
+  footer .developer-notice p {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1021px) and (max-width: 1120px) {
+  .circle {
+    width: 15%;
+    margin-left: 435px;
+  }
+  .image img {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .skills {
+    height: 100px;
+  }
+  .skills ul li {
+    margin-left: 50px;
+    font-size: 1.2em;
+  }
+  .projectfiles .projects {
+    margin-left: 40px;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+  .circle {
+    margin-left: 650px;
+  }
+  .skills {
+    height: 130px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
