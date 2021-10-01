@@ -104,16 +104,24 @@ footer {
 }
 
 .skills {
+  display: flex;
+  flex-flow: row wrap;
   flex-basis: 100%;
   background-color: $primaryColor;
-  height: 120px;
-  ul {
-    color: $secondaryColor;
-    li {
-      display: inline-flex;
-      margin-left: 90px;
-      font-size: 1.3rem;
+  min-height: 120px;
+
+  .items {
+    flex-basis: 25%;
+
+    p {
+      color: $secondaryColor;
+      font-size: 1.2rem;
+      margin-left: 30px;
       margin-top: 10px;
+
+      svg {
+        color: $tertiaryColor;
+      }
     }
   }
 }
@@ -238,6 +246,88 @@ footer {
   height: 50px;
 }
 
+.skills-info {
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 350px;
+  background-color: $primaryColor;
+
+  .medium,
+  .github {
+    flex-basis: 50%;
+  }
+
+  .medium,
+  .github {
+    .item {
+      width: 90%;
+      display: flex;
+      flex-flow: row wrap;
+      min-height: 300px;
+      margin-top: 25px;
+      background-color: $tertiaryColor;
+      margin-left: auto;
+      margin-right: auto;
+
+      .item-01,
+      .item-02 {
+        flex-basis: 50%;
+
+        img {
+          width: 100%;
+          display: block;
+          margin-top: 40px;
+        }
+
+        h1 {
+          color: $primaryColor;
+          font-size: 1.2rem;
+          font-weight: bolder;
+          text-align: center;
+          margin-top: 40px;
+        }
+
+        p {
+          font-size: 1rem;
+          text-align: center;
+          padding: 10px;
+        }
+
+        button {
+          background-color: $primaryColor;
+          border: 1px solid $primaryColor;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+
+          a {
+            text-decoration: none;
+            color: $secondaryColor;
+            font-size: 1rem;
+          }
+
+          a:hover {
+            color: $secondaryColor;
+          }
+        }
+      }
+    }
+  }
+
+  .medium {
+    .item {
+      border-radius: 50px 0 0 50px;
+    }
+  }
+
+  .github {
+    .item {
+      border-radius: 0 50px 50px 0;
+    }
+  }
+}
+
 footer {
   .contact,
   .developer-notice {
@@ -356,15 +446,15 @@ footer {
   }
 
   .skills {
-    min-height: 280px;
-
-    ul {
-      li {
-        margin-left: 25%;
-        margin-top: 10px;
-        display: flex;
+    min-height: 200px;
+    .items {
+      flex-basis: 33.33%;
+      p {
         font-size: 1em;
-        align-items: center;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -400,6 +490,31 @@ footer {
             font-size: 1.2em;
           }
         }
+      }
+    }
+  }
+
+  .skills-info {
+    .medium,
+    .github {
+      flex-basis: 100%;
+
+      .item {
+        .item-01,
+        .item-02 {
+          flex-basis: 100%;
+          p {
+            font-size: 0.9em;
+            padding: 0px;
+          }
+        }
+      }
+    }
+
+    .medium,
+    .github {
+      .item {
+        border-radius: 0px;
       }
     }
   }
@@ -454,12 +569,14 @@ footer {
   }
 
   .skills {
-    height: 320px;
-    ul {
-      li {
-        display: flex;
-        margin-left: 40%;
-        font-size: 1.2em;
+    min-height: 260px;
+    .items {
+      p {
+        font-size: 1.1em;
+        svg {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }
@@ -468,6 +585,39 @@ footer {
     .projects {
       flex-basis: 40%;
       margin-left: 50px;
+    }
+  }
+
+  .skills-info {
+    .medium,
+    .github {
+      flex-basis: 100%;
+
+      .item {
+        .item-01,
+        .item-02 {
+          flex-basis: 100%;
+          p {
+            font-size: 1.4em;
+            padding: 5px;
+          }
+
+          img {
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+
+    .medium,
+    .github {
+      .item {
+        border-radius: 0px;
+        width: 60%;
+      }
     }
   }
 
@@ -506,19 +656,36 @@ footer {
   }
 
   .skills {
-    height: 100px;
-    ul {
-      li {
-        margin-left: 50px;
-        font-size: 1.2em;
-      }
-    }
+    min-height: 240px;
   }
 
   .projectfiles {
     .projects {
       margin-left: 40px;
       flex-basis: 20%;
+    }
+  }
+
+  .skills-info {
+    min-height: 390px;
+    .medium,
+    .github {
+      .item {
+        min-height: 340px;
+        .item-01,
+        .item-02 {
+          h1,
+          p {
+            text-align: left;
+            margin-left: 10px;
+          }
+
+          button {
+            margin-left: 10px;
+            margin-right: -10px;
+          }
+        }
+      }
     }
   }
 }

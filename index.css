@@ -104,23 +104,33 @@ footer {
 }
 
 .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   background-color: #000613;
-  height: 120px;
+  min-height: 120px;
 }
 
-.skills ul {
+.skills .items {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.skills .items p {
   color: #b8ddff;
+  font-size: 1.2rem;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
-.skills ul li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 90px;
-  font-size: 1.3rem;
-  margin-top: 10px;
+.skills .items p svg {
+  color: #aeacf9;
 }
 
 .recentprojects {
@@ -260,6 +270,115 @@ footer {
   height: 50px;
 }
 
+.skills-info {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  min-height: 350px;
+  background-color: #000613;
+}
+
+.skills-info .medium,
+.skills-info .github {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.skills-info .medium .item,
+.skills-info .github .item {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  min-height: 300px;
+  margin-top: 25px;
+  background-color: #aeacf9;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-info .medium .item .item-01,
+.skills-info .medium .item .item-02,
+.skills-info .github .item .item-01,
+.skills-info .github .item .item-02 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.skills-info .medium .item .item-01 img,
+.skills-info .medium .item .item-02 img,
+.skills-info .github .item .item-01 img,
+.skills-info .github .item .item-02 img {
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+}
+
+.skills-info .medium .item .item-01 h1,
+.skills-info .medium .item .item-02 h1,
+.skills-info .github .item .item-01 h1,
+.skills-info .github .item .item-02 h1 {
+  color: #000613;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.skills-info .medium .item .item-01 p,
+.skills-info .medium .item .item-02 p,
+.skills-info .github .item .item-01 p,
+.skills-info .github .item .item-02 p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.skills-info .medium .item .item-01 button,
+.skills-info .medium .item .item-02 button,
+.skills-info .github .item .item-01 button,
+.skills-info .github .item .item-02 button {
+  background-color: #000613;
+  border: 1px solid #000613;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-info .medium .item .item-01 button a,
+.skills-info .medium .item .item-02 button a,
+.skills-info .github .item .item-01 button a,
+.skills-info .github .item .item-02 button a {
+  text-decoration: none;
+  color: #b8ddff;
+  font-size: 1rem;
+}
+
+.skills-info .medium .item .item-01 button a:hover,
+.skills-info .medium .item .item-02 button a:hover,
+.skills-info .github .item .item-01 button a:hover,
+.skills-info .github .item .item-02 button a:hover {
+  color: #b8ddff;
+}
+
+.skills-info .medium .item {
+  border-radius: 50px 0 0 50px;
+}
+
+.skills-info .github .item {
+  border-radius: 0 50px 50px 0;
+}
+
 footer .contact,
 footer .developer-notice {
   -ms-flex-preferred-size: 50%;
@@ -358,18 +477,18 @@ footer .developer-notice p a {
     margin-right: auto;
   }
   .skills {
-    min-height: 280px;
+    min-height: 200px;
   }
-  .skills ul li {
-    margin-left: 25%;
-    margin-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .skills .items {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+  }
+  .skills .items p {
     font-size: 1em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .skills .items p svg {
+    width: 20px;
+    height: 20px;
   }
   .projectfiles .projects {
     -ms-flex-preferred-size: 80%;
@@ -391,6 +510,29 @@ footer .developer-notice p a {
   }
   .projectfiles .projects .light button a {
     font-size: 1.2em;
+  }
+  .skills-info .medium,
+  .skills-info .github {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .skills-info .medium .item .item-01,
+  .skills-info .medium .item .item-02,
+  .skills-info .github .item .item-01,
+  .skills-info .github .item .item-02 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .skills-info .medium .item .item-01 p,
+  .skills-info .medium .item .item-02 p,
+  .skills-info .github .item .item-01 p,
+  .skills-info .github .item .item-02 p {
+    font-size: 0.9em;
+    padding: 0px;
+  }
+  .skills-info .medium .item,
+  .skills-info .github .item {
+    border-radius: 0px;
   }
   footer .contact,
   footer .developer-notice {
@@ -427,19 +569,52 @@ footer .developer-notice p a {
     margin-left: 0px;
   }
   .skills {
-    height: 320px;
+    min-height: 260px;
   }
-  .skills ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 40%;
-    font-size: 1.2em;
+  .skills .items p {
+    font-size: 1.1em;
+  }
+  .skills .items p svg {
+    width: 25px;
+    height: 25px;
   }
   .projectfiles .projects {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     margin-left: 50px;
+  }
+  .skills-info .medium,
+  .skills-info .github {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .skills-info .medium .item .item-01,
+  .skills-info .medium .item .item-02,
+  .skills-info .github .item .item-01,
+  .skills-info .github .item .item-02 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .skills-info .medium .item .item-01 p,
+  .skills-info .medium .item .item-02 p,
+  .skills-info .github .item .item-01 p,
+  .skills-info .github .item .item-02 p {
+    font-size: 1.4em;
+    padding: 5px;
+  }
+  .skills-info .medium .item .item-01 img,
+  .skills-info .medium .item .item-02 img,
+  .skills-info .github .item .item-01 img,
+  .skills-info .github .item .item-02 img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skills-info .medium .item,
+  .skills-info .github .item {
+    border-radius: 0px;
+    width: 60%;
   }
   footer .contact,
   footer .developer-notice {
@@ -465,16 +640,37 @@ footer .developer-notice p a {
     margin-left: 0px;
   }
   .skills {
-    height: 100px;
-  }
-  .skills ul li {
-    margin-left: 50px;
-    font-size: 1.2em;
+    min-height: 240px;
   }
   .projectfiles .projects {
     margin-left: 40px;
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
+  }
+  .skills-info {
+    min-height: 390px;
+  }
+  .skills-info .medium .item,
+  .skills-info .github .item {
+    min-height: 340px;
+  }
+  .skills-info .medium .item .item-01 h1,
+  .skills-info .medium .item .item-01 p,
+  .skills-info .medium .item .item-02 h1,
+  .skills-info .medium .item .item-02 p,
+  .skills-info .github .item .item-01 h1,
+  .skills-info .github .item .item-01 p,
+  .skills-info .github .item .item-02 h1,
+  .skills-info .github .item .item-02 p {
+    text-align: left;
+    margin-left: 10px;
+  }
+  .skills-info .medium .item .item-01 button,
+  .skills-info .medium .item .item-02 button,
+  .skills-info .github .item .item-01 button,
+  .skills-info .github .item .item-02 button {
+    margin-left: 10px;
+    margin-right: -10px;
   }
 }
 
