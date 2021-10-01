@@ -451,6 +451,7 @@ footer {
       flex-basis: 33.33%;
       p {
         font-size: 1em;
+        margin-left: 10px;
         svg {
           width: 20px;
           height: 20px;
@@ -495,11 +496,13 @@ footer {
   }
 
   .skills-info {
+    min-height: 990px;
     .medium,
     .github {
       flex-basis: 100%;
 
       .item {
+        margin-top: 35px;
         .item-01,
         .item-02 {
           flex-basis: 100%;
@@ -589,6 +592,7 @@ footer {
   }
 
   .skills-info {
+    min-height: 1000px;
     .medium,
     .github {
       flex-basis: 100%;
