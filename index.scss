@@ -2,8 +2,9 @@
 
 $primaryFont: "Roboto", sans-serif;
 $primaryColor: #000613;
-$secondaryColor: #b8ddff;
+$secondaryColor: #c5eafd; //#b8ddff;
 $tertiaryColor: #aeacf9;
+$bodyColor: #f8f1e4;
 
 *,
 ::after,
@@ -13,6 +14,7 @@ $tertiaryColor: #aeacf9;
 
 body {
   font-family: $primaryFont;
+  background-color: $bodyColor;
 }
 
 header,
@@ -58,7 +60,7 @@ footer {
 }
 
 .about {
-  flex-basis: 50%;
+  flex-basis: 55%;
   color: $primaryColor;
   h1 {
     margin-top: 100px;
@@ -74,13 +76,23 @@ footer {
   }
 
   #btn-xl {
-    display: none;
+    background-color: $primaryColor;
+    display: block;
+    margin-left: 50px;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid $primaryColor;
+
+    a {
+      color: $bodyColor;
+      text-decoration: none;
+    }
   }
 }
 
 .image {
-  flex-basis: 50%;
-  background-color: $secondaryColor;
+  flex-basis: 45%;
+  background-color: $tertiaryColor;
 
   ul {
     li {
@@ -98,8 +110,8 @@ footer {
 
   img {
     display: block;
-    width: 70%;
-    margin-left: 100px;
+    width: 80%;
+    margin-left: 70px;
   }
 }
 
@@ -114,7 +126,7 @@ footer {
     flex-basis: 25%;
 
     p {
-      color: $secondaryColor;
+      color: $bodyColor;
       font-size: 1.2rem;
       margin-left: 30px;
       margin-top: 10px;
@@ -155,7 +167,7 @@ footer {
       height: 100%;
 
       h4 {
-        color: $secondaryColor;
+        color: $bodyColor;
         margin-top: 90px;
         text-align: center;
       }
@@ -171,7 +183,7 @@ footer {
 
         a {
           text-decoration: none;
-          color: $secondaryColor;
+          color: $bodyColor;
           font-weight: regular;
           display: block;
           text-align: center;
@@ -211,31 +223,31 @@ footer {
   }
 
   .img-01 {
-    background-image: url("images/dataanalysis.jpg");
+    background-image: url("images/optimized-dataanalysis.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .img-02 {
-    background-image: url("images/heartdisease.jpg");
+    background-image: url("images/optimized-heartdisease.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .img-03 {
-    background-image: url("images/insurance.jpg");
+    background-image: url("images/optimized-insurance.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .img-04 {
-    background-image: url("images/stroke.jpg");
+    background-image: url("images/optimized-stroke.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .img-05 {
-    background-image: url("images/bulldozer.jpg");
+    background-image: url("images/optimized-bulldozer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -328,6 +340,78 @@ footer {
   }
 }
 
+.tableau {
+  background-color: $primaryColor;
+  min-height: 250px;
+  color: $bodyColor;
+  .tableau-img,
+  .tableau-text {
+    flex-basis: 50%;
+  }
+
+  .tableau-img {
+    #animation {
+      width: 60%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 0px;
+      animation-name: dropTop;
+      animation-duration: 6s;
+      animation-delay: -2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes dropTop {
+      from {
+        margin-top: 15px;
+      }
+      to {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .tableau-text {
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1.5rem;
+      padding: 5px;
+      color: $secondaryColor;
+      animation-name: textDrop;
+      animation-duration: 6s;
+      animation-delay: -2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes textDrop {
+      0% {
+        margin-top: 15px;
+      }
+      100% {
+        margin-top: 40px;
+      }
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      background-color: $tertiaryColor;
+      border: 1px solid $tertiaryColor;
+      width: 30%;
+      padding: 10px;
+
+      a {
+        color: $primaryColor;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 footer {
   .contact,
   .developer-notice {
@@ -345,19 +429,19 @@ footer {
       }
 
       svg {
-        color: $secondaryColor;
+        color: $bodyColor;
       }
     }
 
     p {
-      color: $secondaryColor;
+      color: $bodyColor;
     }
   }
 
   .developer-notice {
     p {
       font-size: 1.1rem;
-      color: $secondaryColor;
+      color: $bodyColor;
       text-align: right;
       margin-top: 20px;
 
@@ -417,16 +501,11 @@ footer {
     }
 
     #btn-xl {
-      display: block;
       margin-right: auto;
       margin-left: auto;
-      background-color: $primaryColor;
       padding: 5px;
-      border: 1px solid $primaryColor;
 
       a {
-        text-decoration: none;
-        color: $secondaryColor;
         font-size: 1rem;
       }
     }
@@ -519,6 +598,14 @@ footer {
       .item {
         border-radius: 0px;
       }
+    }
+  }
+
+  .tableau {
+    min-height: 350px;
+    .tableau-img,
+    .tableau-text {
+      flex-basis: 100%;
     }
   }
 

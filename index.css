@@ -8,6 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f8f1e4;
 }
 
 header,
@@ -49,18 +50,18 @@ footer {
   display: block;
   margin-top: 30px;
   text-decoration: none;
-  color: #b8ddff;
+  color: #c5eafd;
   text-align: center;
   font-size: 1.2rem;
 }
 
 .circle a:hover {
-  color: #b8ddff;
+  color: #c5eafd;
 }
 
 .about {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
   color: #000613;
 }
 
@@ -78,13 +79,23 @@ footer {
 }
 
 .about #btn-xl {
-  display: none;
+  background-color: #000613;
+  display: block;
+  margin-left: 50px;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #000613;
+}
+
+.about #btn-xl a {
+  color: #f8f1e4;
+  text-decoration: none;
 }
 
 .image {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  background-color: #b8ddff;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  background-color: #aeacf9;
 }
 
 .image ul li a {
@@ -99,8 +110,8 @@ footer {
 
 .image img {
   display: block;
-  width: 70%;
-  margin-left: 100px;
+  width: 80%;
+  margin-left: 70px;
 }
 
 .skills {
@@ -123,7 +134,7 @@ footer {
 }
 
 .skills .items p {
-  color: #b8ddff;
+  color: #f8f1e4;
   font-size: 1.2rem;
   margin-left: 30px;
   margin-top: 10px;
@@ -180,7 +191,7 @@ footer {
 }
 
 .projectfiles .projects .dark h4 {
-  color: #b8ddff;
+  color: #f8f1e4;
   margin-top: 90px;
   text-align: center;
 }
@@ -197,7 +208,7 @@ footer {
 
 .projectfiles .projects .dark button a {
   text-decoration: none;
-  color: #b8ddff;
+  color: #f8f1e4;
   font-weight: regular;
   display: block;
   text-align: center;
@@ -218,8 +229,8 @@ footer {
 
 .projectfiles .projects .light button {
   display: block;
-  background-color: #b8ddff;
-  border: 1px solid #b8ddff;
+  background-color: #c5eafd;
+  border: 1px solid #c5eafd;
   padding: 10px;
   width: 60%;
   margin-left: auto;
@@ -235,31 +246,31 @@ footer {
 }
 
 .projectfiles .img-01 {
-  background-image: url("images/dataanalysis.jpg");
+  background-image: url("images/optimized-dataanalysis.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .projectfiles .img-02 {
-  background-image: url("images/heartdisease.jpg");
+  background-image: url("images/optimized-heartdisease.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .projectfiles .img-03 {
-  background-image: url("images/insurance.jpg");
+  background-image: url("images/optimized-insurance.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .projectfiles .img-04 {
-  background-image: url("images/stroke.jpg");
+  background-image: url("images/optimized-stroke.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .projectfiles .img-05 {
-  background-image: url("images/bulldozer.jpg");
+  background-image: url("images/optimized-bulldozer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -360,7 +371,7 @@ footer {
 .skills-info .github .item .item-01 button a,
 .skills-info .github .item .item-02 button a {
   text-decoration: none;
-  color: #b8ddff;
+  color: #c5eafd;
   font-size: 1rem;
 }
 
@@ -368,7 +379,7 @@ footer {
 .skills-info .medium .item .item-02 button a:hover,
 .skills-info .github .item .item-01 button a:hover,
 .skills-info .github .item .item-02 button a:hover {
-  color: #b8ddff;
+  color: #c5eafd;
 }
 
 .skills-info .medium .item {
@@ -377,6 +388,103 @@ footer {
 
 .skills-info .github .item {
   border-radius: 0 50px 50px 0;
+}
+
+.tableau {
+  background-color: #000613;
+  min-height: 250px;
+  color: #f8f1e4;
+}
+
+.tableau .tableau-img,
+.tableau .tableau-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.tableau .tableau-img #animation {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0px;
+  -webkit-animation-name: dropTop;
+          animation-name: dropTop;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes dropTop {
+  from {
+    margin-top: 15px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+
+@keyframes dropTop {
+  from {
+    margin-top: 15px;
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+
+.tableau .tableau-text h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  padding: 5px;
+  color: #c5eafd;
+  -webkit-animation-name: textDrop;
+          animation-name: textDrop;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes textDrop {
+  0% {
+    margin-top: 15px;
+  }
+  100% {
+    margin-top: 40px;
+  }
+}
+
+@keyframes textDrop {
+  0% {
+    margin-top: 15px;
+  }
+  100% {
+    margin-top: 40px;
+  }
+}
+
+.tableau .tableau-text button {
+  display: block;
+  margin: 0 auto;
+  background-color: #aeacf9;
+  border: 1px solid #aeacf9;
+  width: 30%;
+  padding: 10px;
+}
+
+.tableau .tableau-text button a {
+  color: #000613;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 footer .contact,
@@ -397,16 +505,16 @@ footer .contact p a {
 }
 
 footer .contact p svg {
-  color: #b8ddff;
+  color: #f8f1e4;
 }
 
 footer .contact p {
-  color: #b8ddff;
+  color: #f8f1e4;
 }
 
 footer .developer-notice p {
   font-size: 1.1rem;
-  color: #b8ddff;
+  color: #f8f1e4;
   text-align: right;
   margin-top: 20px;
 }
@@ -428,7 +536,7 @@ footer .developer-notice p a {
   #navbar-sm .fixed-top .collapse .darken a {
     display: block;
     text-decoration: none;
-    color: #b8ddff;
+    color: #c5eafd;
     font-size: 1.2em;
   }
   #navbar-sm .darken {
@@ -455,16 +563,11 @@ footer .developer-notice p a {
     padding: 10px;
   }
   .about #btn-xl {
-    display: block;
     margin-right: auto;
     margin-left: auto;
-    background-color: #000613;
     padding: 5px;
-    border: 1px solid #000613;
   }
   .about #btn-xl a {
-    text-decoration: none;
-    color: #b8ddff;
     font-size: 1rem;
   }
   .image #navbar-xl {
@@ -541,6 +644,14 @@ footer .developer-notice p a {
   .skills-info .medium .item,
   .skills-info .github .item {
     border-radius: 0px;
+  }
+  .tableau {
+    min-height: 350px;
+  }
+  .tableau .tableau-img,
+  .tableau .tableau-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   footer .contact,
   footer .developer-notice {
