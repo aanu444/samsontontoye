@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
-$primaryFont: "Roboto", sans-serif;
+$primaryFont: "Roboto Condensed", sans-serif;
 $primaryColor: #000613;
 $secondaryColor: #c5eafd; //#b8ddff;
 $tertiaryColor: #aeacf9;
@@ -14,7 +15,7 @@ $bodyColor: #f8f1e4;
 
 body {
   font-family: $primaryFont;
-  background-color: $bodyColor;
+  background-color: #dbdbe5;
 }
 
 header,
@@ -92,7 +93,6 @@ footer {
 
 .image {
   flex-basis: 45%;
-  background-color: $tertiaryColor;
 
   ul {
     li {
