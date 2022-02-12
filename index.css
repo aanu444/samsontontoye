@@ -281,6 +281,12 @@ footer {
   background-size: cover;
 }
 
+.projectfiles .img-06 {
+  background-image: url("images/crypto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .space {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
