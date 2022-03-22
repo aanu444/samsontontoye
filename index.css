@@ -284,6 +284,12 @@ footer {
 .projectfiles .img-06 {
   background-image: url("images/crypto.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectfiles .img-07 {
+  background-image: url("images/dogbredd-identification.jpg");
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
